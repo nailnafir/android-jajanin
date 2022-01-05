@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/drawable/pic.xml" value="0.14635416666666667" />
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/drawable/shape_rectangle_8_fff.xml" value="0.2703125" />
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/font/rubik.xml" value="0.28" />
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/layout/activity_auth.xml" value="0.25271739130434784" />
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/layout/activity_detail.xml" value="0.25416666666666665" />
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/layout/activity_splash_page.xml" value="0.25271739130434784" />
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/layout/fragment_detail.xml" value="0.25416666666666665" />
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/layout/fragment_home.xml" value="0.13020833333333334" />
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/layout/fragment_payment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/layout/fragment_payment_success.xml" value="0.25416666666666665" />
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/layout/fragment_sign_in.xml" value="0.25416666666666665" />
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/layout/fragment_sign_up_address.xml" value="0.25416666666666665" />
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/layout/fragment_success_order.xml" value="0.25416666666666665" />
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/layout/layout_toolbar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Full Stack Developer/Mobile/android-jajanin/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

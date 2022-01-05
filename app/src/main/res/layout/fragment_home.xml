@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_photo_empty"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/photo" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextView.RubikNormal22sp020202"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/user_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            style="@style/TextView.RubikLight14sp8D92A3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/user_greetings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_list"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:layout_marginTop="24dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingStart="0dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="24dp"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_home_horizontal" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        style="@style/Base.ThemeOverlay.AppCompat."
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp">
+
+        <com.google.android.material.appbar.AppBarLayout
+            style="@style/Base.ThemeOverlay.AppCompat."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:elevation="0dp">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/white"
+                app:tabIndicatorColor="@color/black"
+                app:tabIndicatorFullWidth="false"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/black"
+                app:tabTextAppearance="@style/Tab" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

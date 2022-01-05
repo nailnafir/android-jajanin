@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragment_sign_in"
+    android:id="@+id/nav_auth">
+
+    <fragment
+        android:id="@+id/fragment_sign_in"
+        android:name="com.nailnafir.jajanin.ui.auth.signin.SignInFragment"
+        tools:layout="@layout/fragment_sign_in">
+
+        <action android:id="@+id/action_sign_up"
+            app:destination="@id/fragment_sign_up" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_sign_up"
+        android:name="com.nailnafir.jajanin.ui.auth.signup.SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+
+        <action android:id="@+id/action_sign_up_address"
+            app:destination="@id/fragment_sign_up_address" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_sign_up_address"
+        android:name="com.nailnafir.jajanin.ui.auth.signup.SignUpAddressFragment"
+        tools:layout="@layout/fragment_sign_up_address">
+
+        <action android:id="@+id/action_sign_up_success"
+            app:destination="@id/fragment_sign_up_success" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_sign_up_success"
+        android:name="com.nailnafir.jajanin.ui.auth.signup.SignUpSuccessFragment"
+        tools:layout="@layout/fragment_sign_up_success">
+    </fragment>
+
+</navigation>

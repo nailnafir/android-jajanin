@@ -1,0 +1,91 @@
+<resources>
+
+    <!--    APP: Application   -->
+    <string name="app_name">Jajanin</string>
+
+    <!--    APP: Button    -->
+    <string name="next">Lanjutkan</string>
+    <string name="sign_up_now">Daftar Sekarang</string>
+    <string name="success_sign_up">Cari Makanan</string>
+    <string name="success_order">Pesan Makanan Lain</string>
+    <string name="view_order">Lihat Pesanan</string>
+    <string name="order_empty">Pesan Makanan</string>
+
+    <!--    APP: Form Input    -->
+    <string name="type_email">Masukkan Email Address</string>
+    <string name="type_password">Masukkan Password</string>
+    <string name="type_full_name">Masukkan Nama Lengkap</string>
+    <string name="type_phone">Masukkan Nomor Telepon</string>
+    <string name="type_address">Masukkan Alamat Rumah</string>
+    <string name="type_house">Masukkan Nomor Alamat Rumah</string>
+    <string name="choose_city">Pilih Kota</string>
+
+    <!--    APP: Description   -->
+    <string name="sign_in">Masuk</string>
+    <string name="sign_up">Daftar</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="photo">Foto Pengguna</string>
+    <string name="phone">Nomor Telepon</string>
+    <string name="address">Alamat Rumah</string>
+    <string name="house">Nomor Alamat Rumah</string>
+    <string name="city">Kota</string>
+
+    <!--  CONTENT: Description  -->
+    <string name="subtitle_sign_in">Temukan Makanan Kesukaanmu</string>
+    <string name="subtitle_sign_up">Daftar Lalu Makan</string>
+    <string name="title_success_sign_up">Horeee! Berhasil Daftar</string>
+    <string name="title_success_order">Yuhuuu! Makan Enak</string>
+    <string name="title_order_empty">Aduuuh! Laper</string>
+    <string name="subtitle_success_sign_up">Sekarang kamu bisa\nbeli makanan yang enak</string>
+    <string name="subtitle_success_order">Tunggu sebentar ya,\nkami menyiapkan pesananmu</string>
+    <string name="subtitle_order_empty">Kamu belum punya pesanan,\nsilakan pesan makanan</string>
+
+    <!-- APP: Menu Info -->
+    <string name="title_home">Beranda</string>
+    <string name="title_order">Pesanan</string>
+    <string name="title_profile">Profil</string>
+    <string name="user_name">Nailul Firdaus</string>
+    <string name="user_email">nail.nafir@gmail.com</string>
+    <string name="user_greetings">Mau makan apa hari ini?</string>
+    <string name="food_name">Takoyaki</string>
+    <string name="food_price">IDR 18000</string>
+    <string name="food_description">Makanan khas Bandung yang cukup sering
+dipesan oleh anak muda dengan pola makan
+yang cukup tinggi dengan mengutamakan
+diet yang sehat dan teratur.</string>
+
+    <!--    APP: Menu Item  -->
+    <string name="profile_edit">Ubah Profil</string>
+    <string name="profile_home">Alamat</string>
+    <string name="profile_security">Keamanan</string>
+    <string name="profile_payment">Pembayaran</string>
+    <string name="info_rate">Nilai Aplikasi</string>
+    <string name="info_help">Bantuan</string>
+    <string name="info_terms">Syarat dan Ketentuan</string>
+    <string name="food_ingredients">Bahan Makanan:</string>
+    <string name="food_ingredients_detail">Terigu, air, daging</string>
+    <string name="button_order_now">Beli Sekarang</string>
+    <string name="total_price">Total Harga</string>
+    <string name="food_quantity">1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="item_ordered">Pembelian</string>
+    <string name="food_quantity_detail">8 x</string>
+    <string name="payment_detail">Detail Pembayaran</string>
+    <string name="payment_delivery">Biaya Kirim</string>
+    <string name="payment_tax">Pajak 10%</string>
+    <string name="payment_total">Total Bayar</string>
+    <string name="price_delivery">IDR 8000</string>
+    <string name="price_tax">IDR 800</string>
+    <string name="price_total">IDR 80000</string>
+    <string name="delivery_address">Alamat Pengiriman</string>
+    <string name="user_phone">0812xxxxxxxx</string>
+    <string name="user_address">Jalan Kenangan XIII</string>
+    <string name="user_house_number">30</string>
+    <string name="user_city">Jakarta</string>
+    <string name="pay_now">Bayar Sekarang</string>
+
+
+</resources>

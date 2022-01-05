@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="24dp"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context="com.nailnafir.jajanin.ui.auth.signup.SignUpAddressFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextView.RubikNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/phone" />
+
+        <EditText
+            style="@style/EditText.RubikNormal14sp8D92A3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:autofillHints="phone"
+            android:background="@drawable/shape_rectangle_outline_8_020202"
+            android:hint="@string/type_phone"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            style="@style/TextView.RubikNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/address" />
+
+        <EditText
+            style="@style/EditText.RubikNormal14sp8D92A3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:autofillHints="postalAddress"
+            android:background="@drawable/shape_rectangle_outline_8_020202"
+            android:hint="@string/type_address"
+            android:inputType="textPostalAddress"
+            android:padding="10dp" />
+
+        <TextView
+            style="@style/TextView.RubikNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/house" />
+
+        <EditText
+            style="@style/EditText.RubikNormal14sp8D92A3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:autofillHints="postalAddress"
+            android:background="@drawable/shape_rectangle_outline_8_020202"
+            android:hint="@string/type_house"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            style="@style/TextView.RubikNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/city" />
+
+        <EditText
+            style="@style/EditText.RubikNormal14sp8D92A3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:autofillHints="password"
+            android:background="@drawable/shape_rectangle_outline_8_020202"
+            android:hint="@string/choose_city"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/button_sign_up_now"
+            style="@style/Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/sign_up_now"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
