@@ -24,6 +24,7 @@
             android:text="@string/phone" />
 
         <EditText
+            android:id="@+id/et_phone_number"
             style="@style/EditText.RubikNormal14sp8D92A3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,6 +43,7 @@
             android:text="@string/address" />
 
         <EditText
+            android:id="@+id/et_address"
             style="@style/EditText.RubikNormal14sp8D92A3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,6 +62,7 @@
             android:text="@string/house" />
 
         <EditText
+            android:id="@+id/et_house_number"
             style="@style/EditText.RubikNormal14sp8D92A3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -78,6 +81,7 @@
             android:text="@string/city" />
 
         <EditText
+            android:id="@+id/et_city"
             style="@style/EditText.RubikNormal14sp8D92A3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

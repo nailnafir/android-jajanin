@@ -10,56 +10,58 @@
     tools:context="com.nailnafir.jajanin.ui.auth.signin.SignInFragment">
 
     <TextView
+        style="@style/TextView.RubikNormal16sp020202"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/TextView.RubikNormal16sp020202"
         android:text="@string/email" />
 
     <EditText
+        android:id="@+id/et_email"
+        style="@style/EditText.RubikNormal14sp8D92A3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:autofillHints="emailAddress"
-        style="@style/EditText.RubikNormal14sp8D92A3"
         android:layout_marginTop="6dp"
-        android:padding="10dp"
+        android:autofillHints="emailAddress"
         android:background="@drawable/shape_rectangle_outline_8_020202"
-        android:hint="@string/type_email" />
+        android:hint="@string/type_email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
 
     <TextView
+        style="@style/TextView.RubikNormal16sp020202"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/TextView.RubikNormal16sp020202"
         android:layout_marginTop="16dp"
         android:text="@string/password" />
 
     <EditText
+        android:id="@+id/et_password"
+        style="@style/EditText.RubikNormal14sp8D92A3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:autofillHints="password"
-        style="@style/EditText.RubikNormal14sp8D92A3"
         android:layout_marginTop="6dp"
-        android:padding="10dp"
+        android:autofillHints="password"
         android:background="@drawable/shape_rectangle_outline_8_020202"
-        android:hint="@string/type_password" />
+        android:hint="@string/type_password"
+        android:inputType="textPassword"
+        android:padding="10dp" />
 
     <Button
         android:id="@+id/button_sign_in"
+        style="@style/Button.Primary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:textAllCaps="false"
-        style="@style/Button.Primary"
-        android:text="@string/sign_in" />
+        android:text="@string/sign_in"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/button_sign_up"
+        style="@style/Button.Secondary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:textAllCaps="false"
-        style="@style/Button.Secondary"
-        android:text="@string/sign_up" />
+        android:text="@string/sign_up"
+        android:textAllCaps="false" />
 
 </LinearLayout>

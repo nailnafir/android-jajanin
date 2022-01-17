@@ -11,13 +11,14 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.nailnafir.jajanin.R
 import com.nailnafir.jajanin.model.dummy.HomeVerticalModel
+import com.nailnafir.jajanin.model.response.home.Data
 import com.nailnafir.jajanin.ui.detail.DetailActivity
 import com.nailnafir.jajanin.ui.home.newtaste.HomeNewTasteAdapter
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomePopularFragment : Fragment(), HomeNewTasteAdapter.ItemAdapterCallback {
 
-    private var foodList: ArrayList<HomeVerticalModel> = ArrayList()
+    private var popularList: ArrayList<Data>? = ArrayList()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,23 +31,25 @@ class HomePopularFragment : Fragment(), HomeNewTasteAdapter.ItemAdapterCallback 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        initDataDummy()
+        popularList = arguments?.getParcelableArrayList("data")
 
-        var adapter = HomeNewTasteAdapter(foodList, this)
+//        initDataDummy()
+
+        var adapter = HomeNewTasteAdapter(popularList!!, this)
         var layoutManager: RecyclerView.LayoutManager =
             LinearLayoutManager(activity)
         rc_list.layoutManager = layoutManager
         rc_list.adapter = adapter
     }
 
-    private fun initDataDummy() {
-        foodList = ArrayList()
-        foodList.add(HomeVerticalModel("Takoyaki", "10000", "", 5f))
-        foodList.add(HomeVerticalModel("Burger", "12000", "", 4f))
-        foodList.add(HomeVerticalModel("Kebab", "18000", "", 3.5f))
-    }
+//    private fun initDataDummy() {
+//        foodList = ArrayList()
+//        foodList.add(HomeVerticalModel("Takoyaki", "10000", "", 5f))
+//        foodList.add(HomeVerticalModel("Burger", "12000", "", 4f))
+//        foodList.add(HomeVerticalModel("Kebab", "18000", "", 3.5f))
+//    }
 
-    override fun onClick(v: View, data: HomeVerticalModel) {
+    override fun onClick(v: View, data: Data) {
         val detail = Intent(activity, DetailActivity::class.java)
         startActivity(detail)
 

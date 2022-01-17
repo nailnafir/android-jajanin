@@ -86,6 +86,7 @@ diet yang sehat dan teratur.</string>
     <string name="user_house_number">30</string>
     <string name="user_city">Jakarta</string>
     <string name="pay_now">Bayar Sekarang</string>
+    <string name="loading_wait">Mohon Tunggu....</string>
 
 
 </resources>
