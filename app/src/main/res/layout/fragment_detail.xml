@@ -7,6 +7,7 @@
     tools:context=".ui.detail.DetailFragment">
 
     <ImageView
+        android:id="@+id/iv_poster"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@string/food_name"
@@ -54,6 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="6dp"
+            android:theme="@style/RatingBar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
@@ -72,10 +74,10 @@
             android:id="@+id/button_min"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:contentDescription="@string/food_quantity"
-            android:src="@drawable/ic_min"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="12dp"
+            android:contentDescription="@string/food_quantity"
+            android:src="@drawable/ic_min"
             app:layout_constraintEnd_toStartOf="@+id/tv_quantity"
             app:layout_constraintTop_toTopOf="parent" />
 

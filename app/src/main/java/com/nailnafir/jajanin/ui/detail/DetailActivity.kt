@@ -12,6 +12,14 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
+
+        // ambil data yang dikirmkan melalu intent (activity menggunakan intent)
+        intent.extras?.let {
+            val navController = Navigation.findNavController(findViewById(R.id.detail_host_fragment))
+            val bundle = Bundle()
+            bundle.putParcelable("data", it.get("data") as Parcelable?)
+            navController.setGraph(navController.graph, bundle)
+        }
     }
 
     fun toolbarPayment() {
