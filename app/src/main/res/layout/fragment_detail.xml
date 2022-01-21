@@ -65,9 +65,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="12dp"
             android:text="@string/food_quantity"
             app:layout_constraintEnd_toStartOf="@+id/button_plus"
+            app:layout_constraintStart_toEndOf="@+id/button_min"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
@@ -75,10 +75,10 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="48dp"
             android:contentDescription="@string/food_quantity"
             android:src="@drawable/ic_min"
-            app:layout_constraintEnd_toStartOf="@+id/tv_quantity"
+            app:layout_constraintEnd_toStartOf="@+id/button_plus"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
