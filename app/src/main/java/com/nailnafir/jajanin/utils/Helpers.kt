@@ -35,4 +35,11 @@ object Helpers {
                 }
             }).create()
     }
+
+    fun Long.convertLongToTime(formatDate: String): String {
+        val date = Date(this)
+        val formatted = SimpleDateFormat(formatDate)
+
+        return formatted.format(date)
+    }
 }

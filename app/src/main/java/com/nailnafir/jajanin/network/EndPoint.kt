@@ -4,6 +4,7 @@ import com.nailnafir.jajanin.model.response.Wrapper
 import com.nailnafir.jajanin.model.response.checkout.CheckoutResponse
 import com.nailnafir.jajanin.model.response.home.HomeResponse
 import com.nailnafir.jajanin.model.response.login.LoginResponse
+import com.nailnafir.jajanin.model.response.transaction.TransactionResponse
 import io.reactivex.Observable
 import okhttp3.MultipartBody
 import retrofit2.http.*
@@ -35,7 +36,6 @@ interface EndPoint {
         @Part profileImage: MultipartBody.Part
     ): Observable<Wrapper<Any>>
 
-
     @GET("food")
     fun home(): Observable<Wrapper<HomeResponse>>
 
@@ -48,4 +48,7 @@ interface EndPoint {
         @Field("total") total: String,
         @Field("status") status: String
     ): Observable<Wrapper<CheckoutResponse>>
+
+    @GET("transaction")
+    fun transaction(): Observable<Wrapper<TransactionResponse>>
 }
