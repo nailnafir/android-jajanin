@@ -40,7 +40,7 @@ data class User(
     val phoneNumber: String,
     @Expose
     @SerializedName("profile_photo_path")
-    val profilePhotoPath: String,
+    val profilePhotoPath: String?,
     @Expose
     @SerializedName("profile_photo_url")
     val profilePhotoUrl: String,

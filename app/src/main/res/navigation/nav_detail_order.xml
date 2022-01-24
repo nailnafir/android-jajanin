@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragment_detail_order"
+    android:id="@+id/nav_detail_order">
+
+    <fragment android:id="@+id/fragment_detail_order"
+        android:name="com.nailnafir.jajanin.ui.order.detailorder.OrderDetailFragment"
+        tools:layout="@layout/fragment_order_detail">
+
+        <argument android:name="data"
+            app:argType="com.nailnafir.jajanin.model.response.transaction.Data"
+            app:nullable="true"/>
+
+    </fragment>
+
+</navigation>
