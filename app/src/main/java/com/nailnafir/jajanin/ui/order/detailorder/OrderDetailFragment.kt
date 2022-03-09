@@ -68,6 +68,17 @@ class OrderDetailFragment : Fragment(), OrderDetailContract.View {
         tv_name_item.text = data?.food?.name
         tv_price_item.formatPrice(data?.food?.price.toString())
 
+        // set data dari json api user
+        tv_name.text = data?.user?.name
+        tv_phone.text = data?.user?.phoneNumber
+        tv_address.text = data?.user?.address
+        tv_house_number.text = data?.user?.houseNumber
+        tv_city.text = data?.user?.city
+
+        // set data dari json api transaction
+        tv_id.text = "#JJ" + data?.id.toString()
+        tv_quantity.text = data?.quantity.toString() + "x"
+
         // validasi isi data
         if (!data?.food?.price.toString().isNullOrEmpty()) {
             var totalTax = data?.food?.price?.div(10)
@@ -79,17 +90,6 @@ class OrderDetailFragment : Fragment(), OrderDetailContract.View {
             tv_tax.text = "IDR 0"
             tv_total.text = "IDR 0"
         }
-
-        // set data dari json api user
-        tv_name.text = data?.user?.name
-        tv_phone.text = data?.user?.phoneNumber
-        tv_address.text = data?.user?.address
-        tv_house_number.text = data?.user?.houseNumber
-        tv_city.text = data?.user?.city
-
-        // set data dari json api transaction
-        tv_id.text = "#JJ" + data?.id.toString()
-        tv_quantity.text = data?.quantity.toString() + "x"
 
         // validasi status pembayaran
         if (data?.status.equals("ON_DELIVERY", true)) {
